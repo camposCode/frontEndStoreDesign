@@ -107,7 +107,7 @@ header a img{
 .footer{
     background-color: var(--primarioMedio);
     padding: 1rem 0;
-    margin-top: 2rem;
+    margin-top: 9rem;
 }
 
 .footer__texto{
@@ -133,10 +133,6 @@ header a img{
 .producto{
     background: var(--primarioMedio);
     padding: 1rem;
-}
-
-.producto__imagen{
-
 }
 
 .producto__informacion{
@@ -204,4 +200,34 @@ header a img{
 .nosotros__imagen{
     grid-row: 1 / 2;
     width: 100%;
+}
+
+/* *************BLOQUES************ */
+.comprar{
+    margin-top: -21rem;
+}
+.bloques{
+    display: grid;
+}
+
+@media ( min-width: 768px){
+    .bloques{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .bloques .bloque_imagen{
+        width: 50%;
+    }
+}
+
+.bloque{
+    text-align: center;
+}
+
+.bloque__titulo{
+    margin: 0;
+}
+
+.bloque_imagen{
+    width: 35%;
 }
