@@ -1,7 +1,7 @@
 :root{
-    --primario: #333333;
-    --primarioMedio: #555555;
-    --primarioClaro: #999999;
+    --primario: #090909;
+    --primarioMedio: #222;
+    --primarioClaro: ;
     --blanco: #fff;
     --negro: #000;
     --secundario: #E39FF6;
@@ -38,7 +38,7 @@ a{
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
 }
 
 .contenedor{
@@ -199,7 +199,6 @@ header a img{
 
 .nosotros__imagen{
     grid-row: 1 / 2;
-    width: 100%;
 }
 
 /* *************BLOQUES************ */
@@ -214,10 +213,6 @@ header a img{
     .bloques{
         grid-template-columns: repeat(3, 1fr);
     }
-
-    .bloques .bloque_imagen{
-        width: 50%;
-    }
 }
 
 .bloque{
@@ -230,4 +225,51 @@ header a img{
 
 .bloque_imagen{
     width: 35%;
+}
+
+
+/* ***************PAGINA DEL PRODUCTO****************** */
+@media ( min-width: 768px){
+    .camisa{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.formulario__campo{
+    background-color: transparent;
+    border: 2px solid var(--secundario);
+    padding: 1rem;
+    color: var(--secundario);
+    font-size: 2rem;
+    border-radius: 3rem;
+}
+
+.formulario__campo::placeholder{
+    color: var(--secundario);
+}
+
+.formulario__submit{
+    background-color: var(--secundario);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    padding: 1rem;
+    border-radius: 3rem;
+    transition: background-color 1s ease;
+    grid-column: 1 / 3;
+}
+
+.formulario__submit:hover{
+    cursor: pointer;
+    border: solid 1px var(--secundario);
+    color: var(--secundario);
+    background-color: var(--primario);
 }
