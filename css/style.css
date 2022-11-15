@@ -183,3 +183,25 @@ header a img{
         grid-column: 2 / 4;
     }
 }
+
+/* ****************NOSOTROS*********************** */
+.nosotros{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+@media ( min-width: 768px){
+    .nosotros{
+        grid-template-columns: repeat(2, auto);
+        column-gap: 2rem;
+    }
+
+    .nosotros__imagen{
+        grid-column: 2 / 3;
+    }
+}
+
+.nosotros__imagen{
+    grid-row: 1 / 2;
+    width: 100%;
+}
